@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+@font-face {
+    font-family: 'digital';
+    src: url('digital-7.ttf');
+}
+
+title {
+    display: none;
+}
+
+body {
+    background-color: rgb(82, 71, 112);
+}
+.logoContainer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    flex-direction: column;
+    text-align: right;
+    z-index: 1;
+}
+
+.createdDiv {
+    justify-content: flex-end;
+    cursor: default;
+}
+
+.createdDiv p{
+    background-color: rgb(120, 111, 148);
+    box-shadow: 0 7px 0 rgba(17, 14, 26, 0.5), 0 0 100px rgba(0,0,0,0.33);
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logoContainer img {
+    background-color: rgb(120, 111, 148);
+    box-shadow: 0 10px 0 rgba(17, 14, 26, 0.5), 0 0 100px rgba(0,0,0,0.33);
+    border-radius: 10px;
+    width: 75px;
+    padding: 10px;
+    transition: 500ms linear;
+    cursor: help;
+}
+
+.logoContainer img:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.mainContainer {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 90vw;
+
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 20px 0 rgba(17, 14, 26, 0.5), 0 0 100px rgba(0,0,0,0.33);
+    z-index: 0;
+}
+
+.resultDisplay {
+    flex-direction: column; 
+    text-align: left;
+    background-color: transparent;
+    width: 97%;
+    border: 4px solid rgb(17, 14, 26);
+    border-radius: 10px;
+    box-shadow: 0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5), 5px 10px 5px rgba(56, 56, 47, 0.15) inset;
+    margin-bottom: 6px;
+    max-width: 100%;
+}
+
+.resultDisplay p {
+    width: 426px;
+    margin: 6px;
+    color:rgb(17, 14, 26);
+    font-family: "digital",'Courier New', Courier, monospace;
+    overflow: hidden;
+    display:block;
+    word-break: break-all;
+}
+
+#history {
+    font-size: 40px;
+    color:rgb(59, 52, 77);
+    min-height: 50px;
+}
+
+#output {
+    font-size: 100px;
+    min-height: 90px;
+    max-height: 50vh;
+}
+
+#sqrt, #squared, #inversePower, #customPower {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+sup {
+    font-size: 25px;
+}
+
+.buttonRow {
+    background-color: transparent;
+    width: 100%;
+}
+
+.buttonRow button {
+    font-size: 60px;
+    width: 100px;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color:rgb(17, 14, 26);
+    box-shadow: 0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5), 5px 10px 5px rgba(56, 56, 47, 0.2) inset;
+}
+
+#DEL {
+    font-size: 40px;
+    width: 210px;
+    background-color: rgb(69, 58, 102);
+    color: white;
+    box-shadow: 0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5), 5px 10px 5px rgba(56, 56, 47, 0.2) inset;
+}
+
+.buttonRow button:hover, #C:hover, #AC:hover, #DEL:hover {
+    background-color: rgb(43, 35, 68) !important;
+    color: white !important;
+    box-shadow:0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5), 0 0 25px rgba(8, 6, 12, 0.5) inset; /*javascript would constantly overwrite, if important tag wasnt present*/
+}
+
+#C, #AC{
+    font-size: 40px;
+    background-color: rgb(197, 56, 91);
+    color: white;
+    box-shadow: 0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5), 5px 10px 5px rgba(56, 56, 47, 0.2) inset;
+}
+
+#sr:hover img{
+    filter: invert(1);
+}
+
+.numberBtn {
+    background-color: rgb(247, 250, 57);
+}
+
+.calculusBtn {
+    background-color: rgb(235,235,235);
+}
+
+button:active {
+    animation: btnAnim 0.125s linear;
+}
+
+@keyframes btnAnim {
+    50% {
+        transform: translateY(5px);
+        box-shadow: 0 2px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5);
+    }
+    100% {
+        transform: translateY(0px);
+        box-shadow: 0 5px 0 rgba(17, 14, 26, 0.5), 0 0 10px rgba(0,0,0,0.5);
+    }
+}

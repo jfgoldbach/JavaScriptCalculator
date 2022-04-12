@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="icon" href="calculator_icon.png" type="image">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;">
+        <div class="mainContainer">
+            <div class="resultDisplay">
+                <p id="history"></p>
+                <p id="output"></p>
+            </div>
+            <div class="buttonRow">
+                <button id="C" class="numberBtn" title="Clear">C</button>
+                <button id="AC" class="numberBtn" title="All clear">AC</button>
+                <button id="DEL" class="numberBtn" title="Delete">DEL</button>
+            </div>
+            <div class="buttonRow">
+                <button id="sr" class="calculusBtn" style="align-items: center; font-size: 30px;" title="Squareroot"><img width="50px" height="40px" src="sqrtX.png" alt="sqrt"></button>
+                <button id="squared" class="calculusBtn" title="To the power of two">x<sup>2</sup></button>
+                <button id="inversePower" class="calculusBtn" title="Custom root (Using last and next input, excluding results)">x<sup>1/y</sup></button>
+                <button id="customPower" class="calculusBtn" title="Custom power (Using last and next input, excluding results)">x<sup>y</sup></button>
+            </div>
+            <div class="buttonRow">
+                <button id="7" class="numberBtn">7</button>
+                <button id="8" class="numberBtn">8</button>
+                <button id="9" class="numberBtn">9</button>
+                <button id="add" class="calculusBtn" title="Plus">+</button>
+            </div>
+            <div class="buttonRow">
+                <button id="4" class="numberBtn">4</button>
+                <button id="5" class="numberBtn">5</button>
+                <button id="6" class="numberBtn">6</button>
+                <button id="subtract" class="calculusBtn" title="Minus">-</button>
+            </div>
+            <div class="buttonRow">
+                <button id="1" class="numberBtn">1</button>
+                <button id="2" class="numberBtn">2</button>
+                <button id="3" class="numberBtn">3</button>
+                <button id="multiply" class="calculusBtn" title="Multiply">×</button>
+            </div>
+            <div class="buttonRow">
+                <button id="dot" class="calculusBtn" title="Dot">.</button>
+                <button id="0" class="numberBtn">0</button>
+                <button id="equals" class="calculusBtn" title="Equals">=</button>
+                <button id="divide" class="calculusBtn" title="Divide">÷</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="logoContainer">
+        <div class="createdDiv">
+            <p>Made with</p>
+        </div>
+        <div style="justify-content: space-between; width: 330px">
+            <a><img title="HTML 5" src="html5.png"></a>
+            <a target="_blank" href="style.css"><img title="Open CSS 3 file" src="css3.png"></a>
+            <a target="_blank" href="script.js"><img title="Open JavaScript file" width="90" src="JavaScript_Logo.png"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
