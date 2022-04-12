@@ -1,3 +1,4 @@
 # JavaScriptCalculator
 A basic JS calculator with some functions such as squareroot, custom root, custom power etc.
-![preview](https://user-images.githubusercontent.com/87607216/163068410-1b2fcb3d-09fc-4523-ba70-2d7cff054a68.png)
+
+![preview](https://user-images.githubusercontent.com/87607216/163068676-aff0f19c-0ac2-4051-a559-c40f82d0d833.png)
