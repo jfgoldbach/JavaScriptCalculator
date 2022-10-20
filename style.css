@@ -9,12 +9,17 @@
     src: url('digital-7.ttf');
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 title {
     display: none;
 }
 
 body {
     background-color: rgb(82, 71, 112);
+    height: -webkit-fill-available;
 }
 .logoContainer{
     position: absolute;
