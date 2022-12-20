@@ -13,6 +13,10 @@ var base = "0";
 var audios = [new Audio("click1.wav"), new Audio("click2.wav"), new Audio("click3.wav")];
 
 
+//sets css variable on root element with actual height (wont update)
+document.documentElement.style.setProperty("--mobileHeight", `${window.innerHeight}px`)
+
+
 //Knöpfe Funktional machen | add functionality to keys
 function addKeys(){
     for(let i = 0; i < buttons.length; i++){
